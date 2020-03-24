@@ -1,0 +1,33 @@
+#mapid {
+    height: 480px;
+    width: 100%;
+}
+.nav{
+    display: flex;
+
+}
+.nav li {
+    margin-left: 1em;
+}
+.reserve{
+    border: black solid 2px;
+    width: 50%;
+    display: none ;
+}
+.reserve_2{
+    border: black solid 2px;
+    width:30%;
+}
+footer{
+    margin-top: 2em;
+    height: 15%;
+    background-color: darkgray;
+}
+.footer{
+    display: flex;
+}
+.footer li{
+    margin-left: 3em;
+    height: 15%;
+    background-color: darkgray;
+}
