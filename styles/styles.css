@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body{
+    width: 100%;
+    margin: 0 auto;
+}
+.start{
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.header{
+    width: 100%;
+}
+.menu{
+    display: none;
+}
+.nav{
+    height: 39px;
+    background: url("images/bg_nav_hor.png") ;
+    margin-top: -20px ;
+}
+.nav_ul{
+    display: flex;
+    justify-content: center;
+
+}
+.nav a{
+    list-style: none;
+    text-decoration: none;
+    color: papayawhip;
+}
+.nav a:hover{
+    background: white;
+    font-size: 22px;
+    color: black;
+    border-radius: 10px;
+    height: 7px;
+}
+ .nav_ul li, .nav_ul a {
+    text-decoration: none;
+    list-style: none;
+    color: papayawhip;
+    font-size: 20px;
+    padding: 0.5em 2em 1em;
+    height: 7px;
+}
+.nav_ul li:hover, .nav_ul a:hover
+{
+    background: white;
+    font-size: 20px;
+    color: black;
+    border-radius: 10px;
+    height: 7px;
+}
+.mapid{
+    border-radius: 30px;
+    border: black double 2px;
+    margin-top: 10em;
+    height: 45em;
+    width: 100%;
+}
+.mapid_70{
+    width: 70%;
+    border-radius: 30px;
+    border: black double 2px;
+    margin-top: 10em;
+    height: 45em;
+}
+.reserved{
+    color: #FFFFFF;
+    background-color: #B9CE3C;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border: 2px double #a5a5a5;
+    box-shadow: 4px 4px 7px #0c0c0c;
+    -webkit-box-shadow: 4px 4px 7px #0c0c0c;
+    -moz-box-shadow: 4px 4px 7px #0c0c0c;
+}
+.reserve{
+    margin-top: 8em;
+    width: 30%;
+}
+fieldset{
+    border-radius: 30px;
+    font-size: 18px;
+    height: 28em;
+    box-shadow: 9px 8px 15px #0c0c0c;
+
+}
+#place, #bike{
+    color: #B9CE3C;
+}
+label
+{
+    display: block;
+    width: 150px;
+    float: left;
+    font-size: 18px;
+}
+#reserved_firstName, #reserved_lastName{
+    margin-left: -4em;
+    font-size: 18px;
+
+}#reserved_bike{
+     font-size: 1em;
+     margin-left: 15%;
+     margin-top: 4%;
+     width: 70%;
+
+ }
+#reserved_bike,#clear,#stop{
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: #B9CE3C;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border: 2px double #a5a5a5;
+    box-shadow: 9px 8px 15px #0c0c0c;
+    -webkit-box-shadow: 9px 8px 15px #0c0c0c;
+    -moz-box-shadow: 9px 8px 15px #0c0c0c;
+}
+
+#reserved_bike:hover, #clear:hover , #stop:hover{
+    padding: 10px;
+    background-color: #899F11;
+    border: 2px solid #FFFFFF;
+    box-shadow: 9px 8px 15px #000000;
+    -webkit-box-shadow: 9px 8px 15px #000000;
+    -moz-box-shadow: 9px 8px 15px #000000;
+}
+.sign{
+    border: black solid 2px;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+}
+.reserved_message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: black solid 2px;
+    border-radius: 50px;
+    box-shadow: 15px 15px 15px #000000;
+    margin-top: 1em;
+    height: 10em;
+    font-size: 1.2em;
+}
+#reserved_success{
+    margin-top: 2%;
+}
+#stop{
+    width: 20%;
+    margin-top: 2% ;
+}
+
+footer{
+    margin-top: 2em;
+    height: 20%;
+    background-color: #002D66;
+    color:#899F11;
+    border-radius: 20px;
+    margin-bottom: 0;
+}
+.footer{
+    display: flex;
+}
+footer h3{
+    margin-left: 1em;
+}
+.footer li, .footer a {
+    text-decoration: none;
+    list-style: none;
+    margin-left: 3em;
+    height: 15%;
+    color: #899F11;
+    margin-bottom: 1em;
+
+}
+.not_visible{
+     display: none;
+    animation: disparition 1.3s ease-in-out;
+    -webkit-animation : disparition 1.3s ease-in-out;
+ }
+.visible{
+    animation: apparition 1.3s ease-in-out;
+    -webkit-animation: apparition 1.3s ease-in-out;
+}
+@keyframes apparition
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes apparition
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes disparition
+{
+    0%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes disparition
+{
+    0%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+@media all and (max-width: 768px)
+{
+    .nav_ul{
+        display: none;
+    }
+
+    .material-icons
+    {
+        font-size:24px;
+        margin-right:12px;
+        vertical-align:text-bottom;
+    }
+
+    .menu
+    {
+        display: contents;
+        background: #899F11;
+        color:#fff;
+    }
+
+    .menu .burger_ul
+    {
+        background:inherit;
+        font-size:20px;
+        font-weight:bold;
+        height:0;
+        overflow:hidden;
+        text-transform:uppercase;
+        transition:height .2s;
+        margin-top: -0.9em;
+    }
+
+    .menu .burger_ul > *
+    {
+        display:block;
+        letter-spacing:1px;
+        line-height:2.5;
+        padding:0 20px;
+        width:100%;
+    }
+
+    .menu .burger_ul input
+    {
+        background:rgba(0,0,0,.2);
+        border:none;
+        color:#fff;
+    }
+
+    .menu .burger
+    {
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        color:inherit;
+        cursor:pointer;
+        font-family:'Material Icons';
+        font-size:30px;
+        line-height:50px;
+    }
+
+    .menu .burger:before
+    {
+        content:'menu';
+    }
+
+    .menu .burger:checked:before
+    {
+        content:'close';
+    }
+
+    .menu .burger:checked + .burger_ul
+    {
+        height: 5em;
+    }
+    .map{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .mapid_70{
+        width: 100%;
+    }
+    .mapid{
+        width: 100%;
+    }
+    .reserve{
+        width: 100%;
+    }
+    #reserved_firstName, #reserved_lastName {
+        margin-top: 0.5em;
+        border: black solid 1px;
+    }
+    .reserved_message{
+        height: 20em;
+        width: 100%;
+    }
+    #reserved_success{
+        margin-top: 1em;
+    }
+    #countdown, #adress{
+        margin: 1em;
+    }
+    #stop{
+        margin-top: 1em;
+        width: 50%;
+    }
+}
